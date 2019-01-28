@@ -5,14 +5,13 @@
 </p>
 
 <p>
-    При решении задачи обратите внимание на следующие моменты:
+    Это упращенная версия миссии <a href="/mission/first-word/">First Word</a>
 </p>
 <ul>
-    <li>В строке могут встречатся точки и запятые</li>
-    <li>Строка может начинаться с буквы или, к примеру, с пробела или точки</li>
-    <li>В слове может быть апостроф и он является частью слова</li>
-    <li>Весь текст может быть представлен только одним словом и все</li>
+    <li>Строка состороит только из англ. символов и пробелов</li>
+    <li>Нет пробелов в начале и в конце строки.</li>
 </ul>
+
 
 
 <!-- Explain input and output values -->
@@ -33,11 +32,9 @@
 
 {% if interpreter.slug == "js-node" %}
 <pre class="brush: javascript">firstWord("Hello world") == "Hello"
-firstWord("greetings, friends") == "greetings"
 </pre>
 {% else %}
 <pre class="brush: python">first_word("Hello world") == "Hello"
-first_word("greetings, friends") == "greetings"
 </pre>
 {% endif %}
 </div>

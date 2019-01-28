@@ -5,13 +5,11 @@
 </p>
 
 <p>
-    When solving a task pay attention to the following points:
+    This is a simplified version of the mission <a href="/mission/first-word/">First Word</a>
 </p>
 <ul>
-    <li>There can be dots and commas in a string.</li>
-    <li>A string can start with a letter or, for example, a dot or space.</li>
-    <li>A word can contain an apostrophe and it's a part of a word.</li>
-    <li>The whole text can be represented with one word and that's it.</li>
+    <li>Input string is only english letters and spaces</li>
+    <li>No spaces at the beginnig and in the end of the string</li>
 </ul>
 
 <!-- Explain input and output values -->
@@ -32,11 +30,9 @@
 
 {% if interpreter.slug == "js-node" %}
 <pre class="brush: javascript">firstWord("Hello world") == "Hello"
-firstWord("greetings, friends") == "greetings"
 </pre>
 {% else %}
 <pre class="brush: python">first_word("Hello world") == "Hello"
-first_word("greetings, friends") == "greetings"
 </pre>
 {% endif %}
 </div>
@@ -51,5 +47,5 @@ first_word("greetings, friends") == "greetings"
 <!-- The section is optional -->
 <p>
     <strong>Precondition:</strong>
-    <i>the text can contain a-z A-Z , . ' </i>
+    <i>the text can contain a-z A-Z and space </i>
 </p>
