@@ -19,6 +19,10 @@ TESTS = {
             "answer": "a"
         },
         {
+            "input": "greeting from CheckiO Planet",
+            "answer": "greeting"
+        },
+        {
             "input": "hi",
             "answer": "hi",
             "explanation": "text consists of only one word"

@@ -1,0 +1,67 @@
+<body data-author="oduven">
+<div class="question-answer">
+    <div class="question">
+        I have no idea how to start solving this mission
+    </div>
+    <div class="answer">
+        Your general strategy here is to split string by words and then get the first one.
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Ok, maybe some doc links?
+    </div>
+    <div class="answer">
+        Sure, if you need to split string, you should do <b>str.split</b>. <a href="https://docs.python.org/3.8/library/stdtypes.html#str.split">Read more about it in docs</a>.
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Ok, how can I get words now?
+    </div>
+    <div class="answer">
+        Well, actually, by colling this function. Check this out
+
+        <pre class="brush: python">
+text = "greeting from CheckiO Planet"
+words = text.split()
+print(words)
+        </pre>
+
+        output for this piece of code will be 
+
+        <pre class="brush: python">
+['greeting', 'from', 'CheckiO', 'Planet']
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Well, how can I get the first word then?
+    </div>
+    <div class="answer">
+        So, the result of <b>split</b> function is a list of words. In order to get the first one you need to use index 0.
+        <pre class="brush: python">
+print(words[0])
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Still don't know how to put all of this together.
+    </div>
+    <div class="answer">
+        So your final solution should looks like this:
+        <pre class="brush: python">
+def first_word(text: str) -> str:
+    """
+        returns the first word in a given text.
+    """
+    return text.split()[0]
+        </pre>
+
+    </div>
+</div>
+
+
+</body>
