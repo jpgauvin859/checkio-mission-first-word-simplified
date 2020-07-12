@@ -1,26 +1,26 @@
 <body data-author="oduvan">
 <div class="question-answer">
     <div class="question">
-        I have no idea how to start solving this mission
+        I have no idea how to start solving this mission.
     </div>
     <div class="answer">
-        Your general strategy here is to split string by words and then get the first one.
+        Your general strategy here should be to split the string into words and then get the first one.
     </div>
 </div>
 <div class="question-answer">
     <div class="question">
-        Ok, maybe some doc links?
+        OK. Maybe you can give me some doc links?
     </div>
     <div class="answer">
-        Sure, if you need to split string, you should do <b>str.split</b>. <a href="https://docs.python.org/3.8/library/stdtypes.html#str.split">Read more about it in docs</a>.
+        Sure, if you need to split a string, you should do <b>str.split</b>. <a href="https://docs.python.org/3.8/library/stdtypes.html#str.split">Read more about it in docs</a>.
     </div>
 </div>
 <div class="question-answer">
     <div class="question">
-        Ok, how can I get words now?
+        OK. How can I get the words now?
     </div>
     <div class="answer">
-        Well, actually, by colling this function. Check this out
+        Well, actually, by calling this function. Check this out:
 
         <pre class="brush: python">
 text = "greeting from CheckiO Planet"
@@ -28,7 +28,7 @@ words = text.split()
 print(words)
         </pre>
 
-        output for this piece of code will be 
+       The output for this piece of code will be: 
 
         <pre class="brush: python">
 ['greeting', 'from', 'CheckiO', 'Planet']
@@ -37,10 +37,10 @@ print(words)
 </div>
 <div class="question-answer">
     <div class="question">
-        Well, how can I get the first word then?
+        Well… How can I get the first word then?
     </div>
     <div class="answer">
-        So, the result of <b>split</b> function is a list of words. In order to get the first one you need to use index 0.
+        So, the result of the <b>split</b> function is a list of words. In order to get the first one, you need to use index 0.
         <pre class="brush: python">
 print(words[0])
         </pre>
@@ -48,10 +48,10 @@ print(words[0])
 </div>
 <div class="question-answer">
     <div class="question">
-        Still don't know how to put all of this together.
+        I still have no idea how to put all of this together.
     </div>
     <div class="answer">
-        So your final solution should looks like this:
+        OK then, your final solution should look like this:
         <pre class="brush: python">
 def first_word(text: str) -> str:
     """
